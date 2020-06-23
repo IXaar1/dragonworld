@@ -1,0 +1,13 @@
+# MiscRecipes.zs
+# Created by IXaar
+# Do not modify without permission!
+
+# Imports
+
+print("MiscRecipes.zs is loading...");
+
+# Variables
+
+# Recipes
+
+print("MiscRecipes.zs loaded!");
