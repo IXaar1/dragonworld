@@ -17,15 +17,12 @@ recipes.remove(<structurize:blockcactusslab_half>);
 
 recipes.addShaped("flint_cactus_slab",<structurize:blockcactusslab_half>*2 , [
 	[sawFlint.transformDamage()],
-	[<structurize:blockcactusplank>],
-	[]]);
+	[<structurize:blockcactusplank>]]);
 recipes.addShaped("metal_cactus_slab",<structurize:blockcactusslab_half>*2 , [
 	[sawMetal.transformDamage()],
-	[<structurize:blockcactusplank>],
-	[]]);
+	[<structurize:blockcactusplank>]]);
 recipes.addShaped("gem_cactus_slab",<structurize:blockcactusslab_half>*2 , [
 	[sawGem.transformDamage()],
-	[<structurize:blockcactusplank>],
-	[]]);
+	[<structurize:blockcactusplank>]]);
 
 print("Structurize.zs loaded!");

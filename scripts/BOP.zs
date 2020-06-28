@@ -68,21 +68,17 @@ recipes.remove(whiteSandstoneSlab);
 
 recipes.addShaped("metal_mud_bricks_slab", mudBricksSlab*2, [
 	[sawMetal.transformDamage()],
-	[mudBricks],
-	[]]);
+	[mudBricks]]);
 recipes.addShaped("gem_mud_bricks_slab", mudBricksSlab*2, [
 	[sawGem.transformDamage()],
-	[mudBricks],
-	[]]);
+	[mudBricks]]);
 
 recipes.addShaped("metal_white_sandstone_slab", whiteSandstoneSlab*2, [
 	[sawMetal.transformDamage()],
-	[whiteSandstone],
-	[]]);
+	[whiteSandstone]]);
 recipes.addShaped("gem_white_sandstone_slab", whiteSandstoneSlab*2, [
 	[sawGem.transformDamage()],
-	[whiteSandstone],
-	[]]);
+	[whiteSandstone]]);
 
 // Wooden slabs
 for i, slab in BOP_woodenSlabs{
@@ -90,18 +86,15 @@ for i, slab in BOP_woodenSlabs{
 
 	recipes.addShaped(slab*2, [
 		[sawFlint.transformDamage()],
-		[BOP_planks[i]],
-		[]]);
+		[BOP_planks[i]]]);
 
 	recipes.addShaped(slab*2, [
 		[sawMetal.transformDamage()],
-		[BOP_planks[i]],
-		[]]);
+		[BOP_planks[i]]]);
 	
 	recipes.addShaped(slab*2, [
 		[sawGem.transformDamage()],
-		[BOP_planks[i]],
-		[]]);	
+		[BOP_planks[i]]]);	
 }
 
 print("BOP.zs loaded!");
