@@ -3,6 +3,7 @@
 # Do not modify without permission!
 
 # Imports
+import crafttweaker.item.IItemStack;
 
 print("Structurize.zs is loading...");
 
@@ -13,6 +14,14 @@ val sawMetal = <ore:toolSawMetal>;
 val sawGem = <ore:toolSawGem>;
 
 # Recipes
+
+// Items to remove
+val toRemove = [
+	<structurize:sceptersteel>,
+	<structurize:blocksolidsubstitution>,
+	<structurize:blocksubstitution>	
+] as IItemStack[];
+
 recipes.remove(<structurize:blockcactusslab_half>);
 
 recipes.addShaped("flint_cactus_slab",<structurize:blockcactusslab_half>*2 , [
@@ -25,4 +34,8 @@ recipes.addShaped("gem_cactus_slab",<structurize:blockcactusslab_half>*2 , [
 	[sawGem.transformDamage()],
 	[<structurize:blockcactusplank>]]);
 
+// Remove recipes
+for i in toRemove{
+	recipes.remove(i);
+}
 print("Structurize.zs loaded!");
